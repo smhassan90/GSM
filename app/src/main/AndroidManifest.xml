@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.greenstar.mecwheel">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crb.controller.SignUp"
+            android:label="@string/title_activity_counseling_card_description"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".crb.controller.MedIQ"
+            android:label="@string/medIQ"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CounselingCardDescription"
+            android:label="@string/title_activity_counseling_card_description"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EnoferDosageCalculator"
+            android:label="@string/title_activity_counseling_card_description"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignAndSymptoms"
+            android:label="@string/title_activity_counseling_card_description"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".crb.controller.LoginScreen"
+            android:label="@string/Login"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".crb.controller.Menu"
+            android:label="@string/Menu"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".crb.controller.SubmittedForms"
+            android:label="@string/SubmittedForms" />
+        <activity
+            android:name=".crb.controller.CRBFormActivity"
+            android:label="@string/CRBForm" >
+
+
+        </activity>
+        <activity
+            android:name=".crb.controller.DashboardController"
+            android:label="@string/dashboard" >
+        </activity>
+        <activity
+            android:name=".ProductDescription"
+            android:label="@string/ProductDetail"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
